@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InkToLaTeX</title>
+
+  <!-- KaTeX -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+    crossorigin="anonymous"
+  />
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Office.js -->
+  <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="taskpane.css" />
+</head>
+<body>
+  <h2>✏️ InkToLaTeX</h2>
+
+  <!-- Drawing section -->
+  <p class="section-heading">Малювання</p>
+  <div class="canvas-container">
+    <canvas id="ink-canvas"></canvas>
+  </div>
+
+  <div class="button-row">
+    <button id="clear-btn" class="btn">Очистити</button>
+    <button id="undo-btn" class="btn">⤺ Скасувати</button>
+    <button id="recognize-btn" class="btn btn-primary">🔍 Розпізнати</button>
+  </div>
+
+  <div id="status"></div>
+
+  <!-- Result section -->
+  <p class="section-heading">Результат</p>
+  <textarea
+    id="result-text"
+    placeholder="Результат розпізнавання..."
+  ></textarea>
+
+  <!-- Preview section -->
+  <p class="section-heading">Перегляд</p>
+  <div id="preview"></div>
+
+  <div class="button-row">
+    <button id="insert-btn" class="btn btn-primary">📋 Вставити в документ</button>
+    <button id="insert-formula-btn" class="btn">📐 Як формулу Word</button>
+  </div>
+
+  <script defer src="taskpane.js"></script>
+</body>
+</html>

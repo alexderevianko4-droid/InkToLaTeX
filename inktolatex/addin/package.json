@@ -1,0 +1,23 @@
+{
+  "name": "inktolatex-addin",
+  "version": "1.0.0",
+  "description": "Word Add-in for handwritten math recognition and LaTeX insertion",
+  "main": "src/taskpane/taskpane.ts",
+  "scripts": {
+    "start": "webpack serve --mode development --config webpack.config.js",
+    "build": "webpack --mode production --config webpack.config.js",
+    "dev-certs": "office-addin-dev-certs install",
+    "sideload": "office-addin-debugging start manifest.xml"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.0",
+    "ts-loader": "^9.5.0",
+    "html-webpack-plugin": "^5.6.0",
+    "copy-webpack-plugin": "^12.0.0",
+    "office-addin-dev-certs": "^1.13.0",
+    "office-addin-debugging": "^5.1.0"
+  }
+}
