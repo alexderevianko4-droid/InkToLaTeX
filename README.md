@@ -19,3 +19,6 @@ You obviously can change the thing that server can work on
 4. pix2text (standart)- use local mode which learned by some handwritigs that looks like computer-way-of-write text formulas. The better thing if you dont have any llm api or smth (its Pix2Text-MFR maodelll: https://github.com/breezedeus/Pix2Text)
 
 #Thank you for lovin` this tiny shioto project 
+Oh i forgot ////
+this project are working only on UKRAINIAAN LANGUAGE 
+With best lovely regards 
